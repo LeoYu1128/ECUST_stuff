@@ -1,0 +1,23 @@
+from tkinter import *
+root=Tk()
+root.title('加法')
+root.geometry('400x300')
+e1=Entry(root,width=10)
+e1.place(x=20,y=20)
+e2=Entry(root,width=10)
+e2.place(x=200,y=20)
+t=Text(root)
+t.place(x=80,y=180,width=250,height=100)
+def plus():
+    a=float(e1.get())
+    b=float(e2.get())
+    s=('%f+%f=%f\n'%(a,b,a+b))
+    t.insert(END,s)
+def d():
+    e1.delete(0,END)
+    e2.delete(0,END)
+    t.delete(0.0,END)
+b1=Button(root,text='加法',width=10,command=plus)
+b1.place(x=20,y=80)
+b2=Button(root,text='清空',width=10,command=d)
+b2.place(x=200,y=80)

@@ -1,0 +1,12 @@
+from tkinter import *
+root=Tk()
+root.title('密码验证')
+root.geometry('300x200')
+lb=Label(root,text='用户名：')
+lb.place(x=0,y=50)
+lb1=Label(root,text='密  码：')
+lb1.place(x=0,y=100)
+e=Entry(root,width=15)
+e.place(x=50,y=50)
+e1=Entry(root,width=15)
+e1.place(x=50,y=100)
