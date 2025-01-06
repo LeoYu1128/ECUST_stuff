@@ -1,0 +1,1 @@
+You input 5 red envelopes		Each red envelope's value is 10 dollars
